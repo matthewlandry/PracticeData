@@ -10,7 +10,7 @@ import os
 
 
 #os.chdir('/Users/gs24494/Desktop/sugar_brain_data')
-os.chdir('/Users/gs24494/Google Drive/sugar_brain_data')
+os.chdir('/Users/mland84/Desktop/PracticeData')
 df=pd.io.parsers.read_table('SB04.txt', sep='\t')
 #this groups by the subject number
 #if you have subjects with inconsistent naming this will not work!
@@ -18,4 +18,4 @@ df=pd.io.parsers.read_table('SB04.txt', sep='\t')
 df2=df.groupby(['Participant ID']).mean()
 
 #this is the output file it creates
-df2.to_csv('sugar_brain_nutrients_grouped.csv', sep=',')
+df2.to_csv('practicedata.csv', sep=',')
